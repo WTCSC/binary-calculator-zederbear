@@ -19,6 +19,8 @@ def dtb(d):
     return b
 
 def binary_calculator(bin1, bin2, operator):
+    if operator not in ["+", "-", "*", "/"]:
+        return "Error"
     if set(bin2) == set("0"):
         return "NaN"
     if set(bin1) <= allowed and set(bin2) <= allowed:

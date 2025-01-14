@@ -17,6 +17,9 @@ Calls btd on bin1 and bin2 does eval by doing dec1 + operator + dec2
 checks if that answer is greater than 256 or less than 0 and returns "Overflow" if true.
 returns the result of dtb(dec\_ans)
 
+### Validate Operator 
+Checks if the operator is one of the following: "+", "-", "*", "/", and returns "Error" if not.
+
 <!--
 
 The following requirements must be met to receive full credit on this assignment. The calculator must handle binary arithmetic operations accurately while following proper error handling procedures and output formatting guidelines.
