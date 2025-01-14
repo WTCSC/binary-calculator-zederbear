@@ -1,4 +1,24 @@
+[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=17650013)
 # Binary Calculator
+btd converts a binary number to decimal while dtb converts a decimal number to binary.
+
+## Functions
+
+### btd binary to decimal
+goes through the digits of b and adds the value (1 or 0) times 2 to the power of (the length of b minus the index minus 1)For example: If you pass the string "101", the first digit, 1, is multiplied by 2^(3-0-1 = 2) which is 1 to the power of 4. So 4 is added. Then the second digit is 0 so nothing is added. The third digit is 1 so, 2^(3-2-1=0) so 1 is added making it output 5.
+
+### dtb decimal to binary
+Does a for loop for 8 digits because the overflow is 256 so its an 8 bit binary number. It checks if the decimal number minus (2 to the power of (8 minus the index minus 1)) is less than zero, and if it is it adds a zero to the string, otherwise it adds a 1. 
+
+### binary\_calculator
+Checks if the set of bin2 is equal to a set of just zero and returns "NaN" if true.
+checks if bin1 and bin2 have only 0s and 1s and returns "Error" if false by checking a set of the digits of bin1 and bin2 against a set of "0" and "1".
+Calls btd on bin1 and bin2 does eval by doing dec1 + operator + dec2
+checks if that answer is greater than 256 or less than 0 and returns "Overflow" if true.
+returns the result of dtb(dec\_ans)
+
+### Validate Operator 
+Checks if the operator is one of the following: "+", "-", "*", "/", and returns "Error" if not.
 
 <!--
 
